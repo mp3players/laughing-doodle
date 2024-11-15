@@ -46,12 +46,12 @@ const metadata = {
       { text: 'Learn more', href: '#features' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/b83761_aa1a3b241b234da7918e527ecbd26fee.jpg',
       alt: 'AstroWind Hero Image',
     }}
   >
     <Fragment slot="title">
-      Sello Genera Igualdad para las instituciones de educación superior
+      Sello Genera Igualdad
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -71,44 +71,57 @@ const metadata = {
 
   <Features
     id="features"
-    title="Why choose AstroWind?"
-    subtitle="Each of the following features enhances AstroWind's value proposition."
+    title="¿Por qué necesitamos el Sello Genera Igualdad para Instituciones de Educación Superior?"
+    subtitle=""
     columns={2}
     items={[
       {
-        title: 'Integration of Astro 4.0 and Tailwind CSS',
+        title: '',
         description:
-          'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
-        icon: 'tabler:layers-union',
+    'Se basa en un análisis e investigación exhaustivos y fundamentados, apoyado en certificaciones análogas como el Sello de Igualdad de Género del Programa de las Naciones Unidas para el Desarrollo (PNUD) y el de la Universidad de Chile, entre otros.',
+        icon: 'tabler:square-check',
       },
       {
-        title: 'Versatile design for startups, small businesses, and more',
-        description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
-        icon: 'tabler:artboard',
+        title: '',
+    description: `Representa una ruta crítica ordenada, integral y coordinada, para que las IES y universidades de México transverzalicen la perspectiva de género y construyan espacios educativos no sexistas, sin discriminación e igualitarios.`,
+        icon: 'tabler:square-check',
       },
       {
-        title: 'Effortless customization for portfolios and marketing sites',
+        title: '',
         description:
-          'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
-        icon: 'tabler:writing',
+          'Busca mejorar las prácticas internas de las IES y también se alinea con los Objetivos de Desarrollo Sostenible (ODS).',
+        icon: 'tabler:square-check',
       },
       {
-        title: 'Optimized landing pages and engaging blogs',
-        description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
-        icon: 'tabler:podium',
-      },
-      {
-        title: 'Fast loading times and production-ready code',
-        description: `Using Astro 4.0 ensures fast loading and seamless rendering, enhancing browsing. The code follows best practices, improving user experience, SEO, and reducing bounce rates.`,
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'SEO-optimized structure for enhanced visibility',
-        description: `Follows SEO best practices with clean code, semantic HTML markup, and fast loading, enhancing search engine rankings. AstroWind's SEO structure ensures visibility to potential customers and clients.`,
-        icon: 'tabler:eyeglass',
+        title: '',
+    description: `Considera dos novedosas herramientas: 1) incorpora la dimensión de infraestructura en las IES y se hace uso de enfoques de design thinking en su construcción, lo que hace que de manera democrática y participativa se diseñe e implemente un plan de acción para la igualdad.`,
+        icon: 'tabler:square-check',
       },
     ]}
   />
+
+  <Hero2
+    tagline=""
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={{
+      src: '~/assets/images/11062b_32767f6b0af8451595ebdc0f849eb65d.webp',
+      alt: 'AstroWind Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      Autodiagnóstico
+    </Fragment>
+
+    <Fragment slot="subtitle">
+	    <p>Para implementar políticas efectivas que promuevan la igualdad en las IES, es crucial conocer el estatus actual de la institución en relación a este tema.</p>
+	    <p>En este contexto, un autodiagnóstico se convierte en una herramienta esencial, ya que permite a las instituciones identificar sus fortalezas y debilidades en cuestiones de género. </p>
+	    <p>Este proceso implica la recopilación y análisis de datos sobre la composición del personal, las oportunidades de liderazgo, las brechas salariales y la cultura organizacional.</p>
+	    <p>Al realizar este análisis, se puede determinar si existen prácticas discriminatorias o sesgos que perpetúan la desigualdad.</p>
+    </Fragment>
+  </Hero2>
 
   <!-- Content Widget **************** -->
 
@@ -239,8 +252,8 @@ const metadata = {
     title="Flexible pricing plans"
     prices={[
       {
-        title: 'free',
-        subtitle: 'Access to core features and a wide range of templates',
+        title: 'Autodiagnóstico de dimensiones y estándares',
+    subtitle: 'El Sello Genera Igualdad para las IES establece un marco integral que abarca 9 dimensiones, 42 estándares y 40 indicadores. Estos elementos fundamentales permiten a las IES determinar su línea base y evaluar su progreso a lo largo del tiempo. La evaluación del cumplimiento se lleva a cabo en al menos dos etapas: durante el autodiagnóstico y la auditoría externa. Cada indicador cuenta con fuentes de verificación específicas que aseguran la validez de la información requerida para comprobar su cumplimiento.',
         price: '0',
         period: '/ month',
         callToAction: {
@@ -250,8 +263,8 @@ const metadata = {
         },
       },
       {
-        title: 'pro',
-        subtitle: 'Premium templates and advanced customization',
+        title: 'Encuesta sobre la percepción de igualdad de género: necesidades y acciones para su fomento',
+    subtitle: 'Es una herramienta esencial para analizar los estereotipos de género, la discriminación y otras actitudes que impactan la igualdad de género. Mediante preguntas cuidadosamente elaboradas, se busca recopilar información sobre las percepciones y experiencias de los miembros de la comunidad en relación con este tema. La encuesta se realiza en línea a través de un formulario digital.',
         price: 15,
         period: '/ Month',
         callToAction: {
@@ -260,11 +273,10 @@ const metadata = {
           href: '#',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
       },
       {
-        title: 'Enterprise',
-        subtitle: 'Tailored solutions for large-scale projects',
+        title: 'Autodiagnóstico Participativo',
+    subtitle: 'Es una herramienta para validar y fortalecer los esfuerzos en la integración de la perspectiva de género dentro de las instituciones.  Entre las metodologías destacadas se encuentran las herramientas de design thinking, que fomentan la identificación y solución de problemas complejos mediante la creatividad y la colaboración. Estas herramientas ayudan en la generación de ideas y en la promoción del trabajo en equipo. Al ser un proceso democrático, esta herramienta ayuda a que el proceso sea consensuado, avalado, transparente y democrático.',
         price: 45,
         period: '/ Month',
         callToAction: {
