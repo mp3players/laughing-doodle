@@ -2,8 +2,6 @@
 publishDate: 2023-08-12T00:00:00Z
 title: Desarrollo del Proceso de Autodiagnóstico
 image: "~/assets/images/bd0728a98e5141ed8762dacec3b08c20.webp"
-metadata:
-  canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
 ---
 
 ### Etapa 1: Contacto por correo electrónico al siguiente correo contacto@simetriamx.org para la asignación de claves de acceso a la plataforma
