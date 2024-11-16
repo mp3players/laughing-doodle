@@ -1,0 +1,80 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Autodiagnóstico de dimensiones',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    title="Plataforma para el Autodiagnóstico de Dimensiones y Estándares del Sello Genera Igualdad para las IES"
+  />
+
+  <FAQs
+    title=""
+    subtitle="En este proceso se analizarán 9 dimensiones. Cada dimensión está vinculado a estándares e indicadores básicos de igualdad de género que definen los componentes a analizar."
+    columns={1}
+    items={[
+      {
+        title: '1. Formación y desarrollo de aprendizaje',
+        description:
+          'Aborda y analiza la perspectiva de género en los planes formativos y competencias de la organización, los procesos de desarrollo laboral, y cursos específicos en torno a la igualdad de género y no discriminación, con un seguimiento pertinente. Su objetivo es Contribuir a la erradicación del sexismo y fomentar la igualdad de género y no discriminación en los procesos formativos de la asociación.',
+      },
+      {
+        title: '2. Investigación e Innovación',
+        description:
+          "Analiza las políticas y mecanismos de la Asociación para la participación y liderazgo de mujeres para el desarrollo de proyectos de investigación e innovación, y la distribución de fondos para realizar dichos proyectos, con seguimiento y evaluación. Su objetivo es transversalizar la perspectiva de igualdad de género en los proyectos de investigación e innovación de la Asociación para fomentar la participación de las mujeres en el liderazgo de proyectos y fomentar la producción científica y de innovación en temas de género.",
+      },
+      {
+        title: '3. Comunicación y vinculación con el medio',
+        description:
+          'Estudia los planes, actividades y políticas de comunicación de la Asociación, y la participación de hombres y mujeres en la producción de contenido de la organización. Su misión es describir y analizar la perspectiva de género en los planes y/o actividades de comunicación al interior y exterior de la organización para fomentar las acciones de sensibilización al personal en temas de igualdad, no discriminación, nuevas masculinidades, lenguaje no sexista e inclusivo y para elevar la participación de mujeres en las actividades de comunicación.',
+      },
+      {
+        title: '4. Condiciones, relaciones, desarrollo y participación y representación en el centro laboral',
+        description:
+          'Se analizan los mecanismos, instrumentos y procesos de gestión del personal relacionados con la participación y representación equilibrada de las mujeres y los hombres en la organización. Se trata de favorecer la participación de las mujeres en la Asociación y el desarrollo profesional igualitario.',
+      },
+      {
+        title: '5. Acoso sexual y violencia de género',
+        description:
+          'Estudia las acciones de prevención, formación de personal, capacitación y atención de casos de acoso y violencia de género, además de la implementación de políticas o mecanismos para erradicar dichas prácticas en el ámbito laboral, y se realiza el seguimiento pertinente. Se pretende erradicar el acoso y hostigamiento sexual, prevenir y disminuir la violencia de género y la discriminación por motivos de género.',
+      },
+      {
+        title: '6. Corresponsabilidad social en el cuidado',
+        description:
+          'Analiza la existencia o no de políticas, procedimientos y acciones que fomenten la corresponsabilidad social; es decir, la provisión de bienes y servicios relacionados con el derecho de las personas de satisfacer las necesidades de atención y cuidados de todos los integrantes del hogar. Su objetivo es revisar la situación de las personas con responsabilidades de cuidado, con el propósito de que el personal de la Asociación logre el equilibrio en los distintos ámbitos de su vida.',
+      },
+      {
+        title: '7. Institucionalidad',
+        description:
+          'Aborda la creación, implementación y análisis de políticas, reglamentos y áreas especializadas de género en la organización. Se busca fortalecer la institucionalidad de género en la Asociación.',
+      },
+      {
+        title: '8. Infraestructura',
+        description:
+          'Conocer la infraestructura que existe en las IES para el fomento a la igualdad de género y ver la manera en que esto ayuda a la creación de un entorno inclusivo e igualitario. Su objetivo es favorecer la incorporación de la perspectiva de género en la infraestructura institucional para fomentar la igualdad de género.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Ready to boost your projects?"
+    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get started now',
+        href: '/',
+      },
+    ]}
+  />
+</Layout>
