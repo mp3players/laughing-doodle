@@ -12,6 +12,7 @@
   status = 200
   force = true
   conditions = {Role = ["dimensiones"]}
+
 [[redirects]]
   from = "/services"
   to = "/autodiagnostico-dimensiones"
