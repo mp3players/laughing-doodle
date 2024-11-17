@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import { twMerge } from 'tailwind-merge';
 import type { CallToAction as Props } from '~/types';
+import netlifyIdentity from 'netlify-identity-widget';
 
 const {
   variant = 'secondary',
@@ -19,11 +20,12 @@ const variants = {
   tertiary: 'btn btn-tertiary',
   link: 'cursor-pointer hover:text-primary',
 };
+
 ---
 
 {
   type === 'button' || type === 'submit' || type === 'reset' ? (
-    <button type={type} class={twMerge(variants[variant] || '', className)} {...rest}>
+    <button type={type} class={twMerge(variants[variant] || '', className, 'loginbutton')} {...rest}>
       <Fragment set:html={text} />
       {icon && <Icon name={icon} class="w-5 h-5 ml-1 -mr-1.5 rtl:mr-1 rtl:-ml-1.5 inline-block" />}
     </button>
@@ -38,3 +40,19 @@ const variants = {
     </a>
   )
 }
+<script>
+  const netlifyAuth = {
+    isAuthenticated: false,
+    user: null,
+    authenticate() {
+      netlifyIdentity.open();
+      netlifyIdentity.on('login', () => {window.location.replace("https://stackoverflow.com");});
+    },
+  };
+  const buttons = document.querySelectorAll('button.loginbutton');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      netlifyAuth.authenticate()
+    });
+  });
+</script>
