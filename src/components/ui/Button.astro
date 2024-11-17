@@ -45,8 +45,9 @@ const variants = {
     isAuthenticated: false,
     user: null,
     authenticate() {
+      this.isAuthenticated = true;
       netlifyIdentity.open();
-      netlifyIdentity.on('login', () => {window.location.replace("https://stackoverflow.com");});
+      netlifyIdentity.on('login', (user) => { this.user = user; window.location.replace("https://roaring-fenglisu-30090b.netlify.app/homes");});
     },
   };
   const buttons = document.querySelectorAll('button.loginbutton');
