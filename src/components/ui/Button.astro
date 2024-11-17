@@ -47,7 +47,7 @@ const variants = {
     authenticate() {
       this.isAuthenticated = true;
       netlifyIdentity.open();
-      netlifyIdentity.on('login', (user) => { this.user = user; window.location.replace("https://roaring-fenglisu-30090b.netlify.app/homes");});
+      netlifyIdentity.on('login', (user) => { this.user = user; window.location.replace("https://roaring-fenglisu-30090b.netlify.app/plataforma");});
     },
   };
   const buttons = document.querySelectorAll('button.loginbutton');
