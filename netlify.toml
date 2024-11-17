@@ -8,6 +8,12 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 [[redirects]]
-  from = "/about"
-  to = "/services"
-  conditions = {Role = ["dimensiones"]}
+  from = "/services"
+  status = 200
+  force = true
+  kconditions = {Role = ["dimensiones"]}
+[[redirects]]
+  from = "/services"
+  to = "/autodiagnostico-dimensiones"
+  status = 302
+  force = true
