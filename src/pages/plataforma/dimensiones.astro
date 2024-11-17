@@ -1,0 +1,97 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+import { headerData } from '~/navigation';
+
+const metadata = {
+  title: 'Sello Genera Igualdad',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Login',
+          href: '#',
+        },
+        {
+          variant: 'primary',
+          text: 'Sign Up',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <Features2
+    title="Autodiagnóstico de Dimensiones"
+    subtitle="Elija la dimensión que desee analizar y haga click para iniciar el proceso. Una vez completada, seleccione otra dimensión hasta haber analizado las 9 dimensiones."
+    tagline=""
+    items={[
+      {
+        title: 'Dimensión 1',
+        description: "Formación, docencia y desarrollo de aprendizaje",
+        icon: 'dimensionuno',
+      },
+      {
+        title: 'Dimensión 2',
+        description:
+    "Investigación, Innovación y Desarrollo y Creación Artística",
+        icon: 'dimensiondos',
+      },
+      {
+        title: 'Dimensión 3',
+        description:
+          'Comunicación y vinculación con el medio',
+        icon: 'dimensiontres',
+      },
+      {
+        title: 'Dimensión 4',
+        description:
+          "Participación y Representación en la Academia",
+        icon: 'dimensioncuatro',
+      },
+      {
+        title: 'Dimensión 5',
+        description:
+    'Condiciones y relaciones de desarrollo laboral',
+        icon: 'dimensioncinco',
+      },
+      {
+        title: 'Dimensión 6',
+        description: 'Acoso y hostigamiento sexual y violencia de género',
+        icon: 'dimensionseis',
+      },
+      {
+        title: 'Dimensión 7',
+        description: 'Corresponsabilidad social en el cuidado',
+        icon: 'dimensionsiete',
+      },
+      {
+        title: 'Dimensión 8',
+        description:
+          'Institucionalidad',
+        icon: 'dimensionocho',
+      },
+      {
+        title: 'Dimensión 9',
+        description: "Infraestructura",
+        icon: 'dimensionnueve',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+
+</Layout>

@@ -30,7 +30,7 @@
     "@fontsource-variable/jost": "^5.1.1",
     "astro": "^4.16.2",
     "astro-embed": "^0.7.4",
-    "astro-icon": "^1.1.1",
+    "astro-icon": "^1.1.2",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
     "netlify-identity-widget": "^1.9.2",

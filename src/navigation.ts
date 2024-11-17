@@ -4,7 +4,7 @@ export const headerData = {
   links: [
     {
       text: 'Plataforma para dimensiones',
-      href: '#',
+      href: '/dimensiones',
     },
     {
       text: 'Encuesta a la comunidad',
