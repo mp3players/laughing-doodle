@@ -40,7 +40,9 @@ const variants = {
   )
 }
 <script>
-  import { netlifyIdentity } from 'netlify-identity-widget';
+netlifyIdentity.init({
+  locale: 'es',
+});
   const netlifyAuth = {
     isAuthenticated: false,
     user: null,
