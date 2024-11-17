@@ -11,7 +11,7 @@
   from = "/services"
   status = 200
   force = true
-  kconditions = {Role = ["dimensiones"]}
+  conditions = {Role = ["dimensiones"]}
 [[redirects]]
   from = "/services"
   to = "/autodiagnostico-dimensiones"
