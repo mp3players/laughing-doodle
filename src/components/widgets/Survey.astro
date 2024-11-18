@@ -1,0 +1,33 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import type { Features as Props } from '~/types';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+<div
+        data-heyform-id="1u0YjiZI"
+        data-heyform-type="standard"
+        data-heyform-custom-url="https://heyform.net/f/1u0YjiZI"
+        data-heyform-width-type="%"
+        data-heyform-width="100"
+        data-heyform-height-type="px"
+        data-heyform-height="500"
+        data-heyform-auto-resize-height="true"
+>
+
+</div>
+<script src="https://www.unpkg.com/@heyform-inc/embed@latest/dist/index.umd.js"></script>
+</WidgetWrapper>
